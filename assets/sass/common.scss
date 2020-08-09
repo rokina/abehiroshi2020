@@ -1,0 +1,192 @@
+html {
+  font-size: 62.5% !important;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #F0F0FF;
+    border-right: 4px solid #ddd;
+    position: fixed;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100vh;
+        background: #bbb;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100vh;
+        background: #333;
+        right: -5px;
+        top: 0;
+        bottom: 0;
+    }
+    &__list {
+        margin-top: 50px;
+        margin-left: 36px;
+        padding-left: 20px;
+        li {
+            list-style: none;
+            position: relative;
+            font-size: 1.6rem;
+            &:not(:first-of-type) {
+                margin-top: 30px;
+            }
+            &:nth-child(1) {
+                &::before {
+                    background: #FFCCCC;
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    background: #00FF00;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    background: #33FFFF;
+                }
+            }
+            &:nth-child(4) {
+                &::before {
+                    background: #0099FF;
+                }
+            }
+            &:nth-child(5) {
+                &::before {
+                    background: #0000FF;
+                }
+            }
+            &:nth-child(6) {
+                &::before {
+                    background: #333399;
+                }
+            }
+            &:nth-child(7) {
+                &::before {
+                    background: #CC00CC;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                left: -20px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    &.top {
+        background: url('~assets/images/abehiroshi.jpg') repeat;
+    }
+    &.movie {
+        margin-left: 200px;
+        background: url('~assets/images/movie.jpg') repeat;
+    }
+    .conts {
+        width: 900px;
+        margin: 30px auto;
+        display: flex;
+        p,dl {
+            font-size: 1.6rem;
+            word-break: break-word;
+        }
+    }
+    .leftBlock {
+        width: 350px;
+    }
+    .rightBlock {
+        width: calc(550px - 20px);
+        margin-left: 20px;
+    }
+}
+
+.title01 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+.title02 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.table {
+    width: 500px;
+    margin: 30px auto 0;
+    border: 1px solid #333;
+    border-collapse: separate;
+    display: table;
+    tr {
+        border: 1px solid #333;
+        display: table-row;
+        &:not(:first-of-type) {
+            margin-top: 2px;
+        }
+    }
+    td {
+        font-size: 1.6rem;
+        font-weight: bold;
+        border: 1px solid #333;
+    }
+}
+
+.list {
+    font-size: 1.6rem;
+    width: 500px;
+    font-weight: bold;
+    margin: 30px auto 0;
+    padding-left: 20px;
+}
+
+.dlList01 {
+    padding: 30px;
+    font-size: 1.6rem;
+    &__item {
+        display: flex;
+        &:not(:first-of-type) {
+            margin-top: 5px;
+        }
+    }
+    dd {
+        margin-left: 10px;
+    }
+}
+
+.dlList02 {
+    margin-top: 30px;
+    &__item {
+        display: flex;
+        &:not(:first-of-type) {
+            margin-top: 5px;
+        }
+    }
+}
+
+hr {
+    margin-top: 30px;
+}

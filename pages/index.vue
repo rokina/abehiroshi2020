@@ -1,65 +1,68 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        abehiroshi2020
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <main class="main top">
+    <h1 class="title01">
+      阿部 寛のホームページ
+    </h1>
+    <div class="conts">
+      <div class="leftBlock">
+        <img src="~assets/images/abe-top-20190328-2.jpg" alt="">
+        <dl class="dlList01">
+          <div class="dlList01__item">
+            <dt>阿部 寛</dt>
+            <dd>（あべ ひろし）</dd>
+          </div>
+          <div class="dlList01__item">
+            <dt>生年月日</dt>
+            <dd>1964年6月22日</dd>
+          </div>
+          <div class="dlList01__item">
+            <dt>血液型</dt>
+            <dd>A型</dd>
+          </div>
+          <div class="dlList01__item">
+            <dt><a href="#">プロフィール</a></dt>
+          </div>
+        </dl>
+        <p>If you have any enquiries regarding my TV drama or film, or would like to make an enquiry concerning future projects, please do not hesitate to contact me through the following email address.</p>
+        <p>mail:<a href="mailto:shigeta@navy.plala.or.jp">shigeta@navy.plala.or.jp</a></p>
+        <dl class="dlList02">
+          <div class="dlList02__item">
+            <dt>所属:</dt>
+            <dd>茂田オフィス<br>
+            107-0052<br>
+            東京都港区赤坂9-5-29<br>
+            赤坂ロイヤルマンション303</dd>
+          </div>
+          <div class="dlList02__item">
+            <dt>TEL :</dt>
+            <dd>+81-3-5410-8585</dd>
+          </div>
+          <div class="dlList02__item">
+            <dt>FAX :</dt>
+            <dd>+81-3-5410-0588</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="rightBlock">
+        <p>★★★　最新情報　★★★</p>
+        <hr>
+        <dl>
+          <dt>ドラマ</dt>
+          <dd>サンプルサンプル</dd>
+        </dl>
+        <hr>
+        <dl>
+          <dt>映画</dt>
+          <dd>サンプルサンプル</dd>
+        </dl>
+        <hr>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>
