@@ -48,12 +48,18 @@
         <hr>
         <dl>
           <dt>ドラマ</dt>
-          <dd>サンプルサンプル</dd>
+          <dd v-for="(post,i) in infoDrama" :key="i">
+            <a href="{{ post.fields.link }}">{{ post.fields.title }}</a>
+            {{ post.fields.comment }}
+          </dd>
         </dl>
         <hr>
         <dl>
           <dt>映画</dt>
-          <dd>サンプルサンプル</dd>
+          <dd v-for="(post,i) in infoMovie" :key="i">
+            <a href="{{ post.fields.link }}">{{ post.fields.title }}</a>
+            {{ post.fields.comment }}
+          </dd>
         </dl>
         <hr>
       </div>
@@ -62,7 +68,32 @@
 </template>
 
 <script>
-export default {}
+import { createClient } from '~/plugins/contentful.js'
+
+const client = createClient()
+
+export default {
+  data() {
+    return {
+      infoMovie: '',
+      infoDrama: ''
+    }
+  },
+  async asyncData({ env, params }) {
+    const infoMovie = await client
+    .getEntries({
+      content_type: "infoMovie"
+    })
+    const infoDrama = await client
+    .getEntries({
+      content_type: "infoDrama"
+    })
+    return{
+      infoMovie:infoMovie.items,
+      infoDrama:infoDrama.items
+    }
+  }
+}
 </script>
 
 <style></style>
