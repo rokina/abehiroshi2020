@@ -118,6 +118,16 @@ html {
     .rightBlock {
         width: calc(550px - 20px);
         margin-left: 20px;
+        dt {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        dd {
+          &:not(:last-of-type) {
+            margin-bottom: 15px;
+          }
+        }
     }
 }
 

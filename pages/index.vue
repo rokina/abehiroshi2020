@@ -49,16 +49,16 @@
         <dl>
           <dt>ドラマ</dt>
           <dd v-for="(post,i) in infoDrama" :key="i">
-            <a href="{{ post.fields.link }}">{{ post.fields.title }}</a>
-            {{ post.fields.comment }}
+            <a :href="post.fields.link">{{ post.fields.title }}</a>
+            <br>{{ post.fields.comment }}
           </dd>
         </dl>
         <hr>
         <dl>
           <dt>映画</dt>
           <dd v-for="(post,i) in infoMovie" :key="i">
-            <a href="{{ post.fields.link }}">{{ post.fields.title }}</a>
-            {{ post.fields.comment }}
+            <a :href="post.fields.link">{{ post.fields.title }}</a>
+            <br>{{ post.fields.comment }}
           </dd>
         </dl>
         <hr>
