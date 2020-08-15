@@ -24,7 +24,7 @@
           </div>
         </dl>
         <p>If you have any enquiries regarding my TV drama or film, or would like to make an enquiry concerning future projects, please do not hesitate to contact me through the following email address.</p>
-        <p>mail:<a href="mailto:shigeta@navy.plala.or.jp">shigeta@navy.plala.or.jp</a></p>
+        <p class="mailTxt">mail:<a href="">shigeta@navy.plala.or.jp</a></p>
         <dl class="dlList02">
           <div class="dlList02__item">
             <dt>所属:</dt>
@@ -44,7 +44,7 @@
         </dl>
       </div>
       <div class="rightBlock">
-        <p>★★★　最新情報　★★★</p>
+        <p class="infoTitle">★★★　最新情報　★★★</p>
         <hr>
         <dl>
           <dt>ドラマ</dt>

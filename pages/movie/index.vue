@@ -1,7 +1,7 @@
 <template>
   <main class="main movie">
     <h1 class="title02">
-      「阿部 寛の映画出演」
+      阿部 寛の映画出演
     </h1>
     <ul class="list">
       <li v-for="(post,i) in movieAward" :key="i">
