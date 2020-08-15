@@ -24,6 +24,9 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
+  htmlAttrs:{
+    lang: 'ja'
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -33,7 +36,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'test',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

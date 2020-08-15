@@ -27,6 +27,9 @@ import { createClient } from '~/plugins/contentful.js'
 const client = createClient()
 
 export default {
+  head: {
+    title: 'テスト'
+  },
   data() {
     return {
       movie: '',
