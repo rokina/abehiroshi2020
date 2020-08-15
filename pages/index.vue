@@ -5,7 +5,10 @@
     </h1>
     <div class="conts">
       <div class="leftBlock">
-        <img src="~assets/images/abe-top-20190328-2.jpg" alt="">
+        <picture>
+          <source srcset="~assets/images/abe-top-20190328-2.webp" type="image/webp">
+          <img src="~assets/images/abe-top-20190328-2.jpg" alt="">
+        </picture>
         <dl class="dlList01">
           <div class="dlList01__item">
             <dt>阿部 寛</dt>
