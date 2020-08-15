@@ -24,10 +24,10 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
-  htmlAttrs:{
-    lang: 'ja'
-  },
   head: {
+    htmlAttrs:{
+      lang: 'ja'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
